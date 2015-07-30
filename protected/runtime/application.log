@@ -1,0 +1,128 @@
+2015/07/31 02:13:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "ru/calendar/view/113/2015-12-18".' in /var/www/happy-moments/data/www/happy-moments.com.ua/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/happy-moments/data/www/happy-moments.com.ua/framework/web/CWebApplication.php(141): CWebApplication->runController('ru/calendar/vie...')
+#1 /var/www/happy-moments/data/www/happy-moments.com.ua/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/happy-moments/data/www/happy-moments.com.ua/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ru/calendar/view/113/2015-12-18
+---
+2015/07/31 02:16:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "ru/calendar/view/42/2012-3-28".' in /var/www/happy-moments/data/www/happy-moments.com.ua/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/happy-moments/data/www/happy-moments.com.ua/framework/web/CWebApplication.php(141): CWebApplication->runController('ru/calendar/vie...')
+#1 /var/www/happy-moments/data/www/happy-moments.com.ua/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/happy-moments/data/www/happy-moments.com.ua/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ru/calendar/view/42/2012-3-28
+---
+2015/07/31 02:16:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "ru/calendar/view/82/2014-9-13".' in /var/www/happy-moments/data/www/happy-moments.com.ua/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/happy-moments/data/www/happy-moments.com.ua/framework/web/CWebApplication.php(141): CWebApplication->runController('ru/calendar/vie...')
+#1 /var/www/happy-moments/data/www/happy-moments.com.ua/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/happy-moments/data/www/happy-moments.com.ua/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ru/calendar/view/82/2014-9-13
+---
+2015/07/31 02:17:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "ru/calendar/view/69/2014-7-13".' in /var/www/happy-moments/data/www/happy-moments.com.ua/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/happy-moments/data/www/happy-moments.com.ua/framework/web/CWebApplication.php(141): CWebApplication->runController('ru/calendar/vie...')
+#1 /var/www/happy-moments/data/www/happy-moments.com.ua/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/happy-moments/data/www/happy-moments.com.ua/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ru/calendar/view/69/2014-7-13
+---
+2015/07/31 02:17:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "ru/calendar/view/79/2009-5-28".' in /var/www/happy-moments/data/www/happy-moments.com.ua/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/happy-moments/data/www/happy-moments.com.ua/framework/web/CWebApplication.php(141): CWebApplication->runController('ru/calendar/vie...')
+#1 /var/www/happy-moments/data/www/happy-moments.com.ua/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/happy-moments/data/www/happy-moments.com.ua/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ru/calendar/view/79/2009-5-28
+---
+2015/07/31 02:18:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "ru/calendar/view/72/2015-9-15".' in /var/www/happy-moments/data/www/happy-moments.com.ua/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/happy-moments/data/www/happy-moments.com.ua/framework/web/CWebApplication.php(141): CWebApplication->runController('ru/calendar/vie...')
+#1 /var/www/happy-moments/data/www/happy-moments.com.ua/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/happy-moments/data/www/happy-moments.com.ua/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ru/calendar/view/72/2015-9-15
+---
+2015/07/31 02:18:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "ru/calendar/view/104/2011-7-25".' in /var/www/happy-moments/data/www/happy-moments.com.ua/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/happy-moments/data/www/happy-moments.com.ua/framework/web/CWebApplication.php(141): CWebApplication->runController('ru/calendar/vie...')
+#1 /var/www/happy-moments/data/www/happy-moments.com.ua/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/happy-moments/data/www/happy-moments.com.ua/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ru/calendar/view/104/2011-7-25
+---
+2015/07/31 02:21:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "ru/calendar/view/25/2012-7-22".' in /var/www/happy-moments/data/www/happy-moments.com.ua/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/happy-moments/data/www/happy-moments.com.ua/framework/web/CWebApplication.php(141): CWebApplication->runController('ru/calendar/vie...')
+#1 /var/www/happy-moments/data/www/happy-moments.com.ua/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/happy-moments/data/www/happy-moments.com.ua/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ru/calendar/view/25/2012-7-22
+---
+2015/07/31 02:21:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "js/main.js".' in /var/www/happy-moments/data/www/happy-moments.com.ua/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/happy-moments/data/www/happy-moments.com.ua/framework/web/CWebApplication.php(141): CWebApplication->runController('js/main.js')
+#1 /var/www/happy-moments/data/www/happy-moments.com.ua/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/happy-moments/data/www/happy-moments.com.ua/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/main.js?1426127423
+---
+2015/07/31 02:21:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "js/pkg.min.js".' in /var/www/happy-moments/data/www/happy-moments.com.ua/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/happy-moments/data/www/happy-moments.com.ua/framework/web/CWebApplication.php(141): CWebApplication->runController('js/pkg.min.js')
+#1 /var/www/happy-moments/data/www/happy-moments.com.ua/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/happy-moments/data/www/happy-moments.com.ua/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/pkg.min.js?v=18
+---
+2015/07/31 02:23:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "ru/calendar/view/58/2014-1-23".' in /var/www/happy-moments/data/www/happy-moments.com.ua/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/happy-moments/data/www/happy-moments.com.ua/framework/web/CWebApplication.php(141): CWebApplication->runController('ru/calendar/vie...')
+#1 /var/www/happy-moments/data/www/happy-moments.com.ua/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/happy-moments/data/www/happy-moments.com.ua/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ru/calendar/view/58/2014-1-23
+---
+2015/07/31 02:24:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "ru/calendar/view/113/2014-9-5".' in /var/www/happy-moments/data/www/happy-moments.com.ua/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/happy-moments/data/www/happy-moments.com.ua/framework/web/CWebApplication.php(141): CWebApplication->runController('ru/calendar/vie...')
+#1 /var/www/happy-moments/data/www/happy-moments.com.ua/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/happy-moments/data/www/happy-moments.com.ua/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ru/calendar/view/113/2014-9-5
+---
+2015/07/31 02:25:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "ru/calendar/view/84/2015-4-13".' in /var/www/happy-moments/data/www/happy-moments.com.ua/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/happy-moments/data/www/happy-moments.com.ua/framework/web/CWebApplication.php(141): CWebApplication->runController('ru/calendar/vie...')
+#1 /var/www/happy-moments/data/www/happy-moments.com.ua/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/happy-moments/data/www/happy-moments.com.ua/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ru/calendar/view/84/2015-4-13
+---
+2015/07/31 02:31:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in /var/www/happy-moments/data/www/happy-moments.com.ua/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/happy-moments/data/www/happy-moments.com.ua/framework/web/CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 /var/www/happy-moments/data/www/happy-moments.com.ua/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/happy-moments/data/www/happy-moments.com.ua/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2015/07/31 02:33:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "ru/calendar/view/69/2013-9-17".' in /var/www/happy-moments/data/www/happy-moments.com.ua/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/happy-moments/data/www/happy-moments.com.ua/framework/web/CWebApplication.php(141): CWebApplication->runController('ru/calendar/vie...')
+#1 /var/www/happy-moments/data/www/happy-moments.com.ua/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/happy-moments/data/www/happy-moments.com.ua/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ru/calendar/view/69/2013-9-17
+---
+2015/07/31 02:35:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "ru/calendar/view/57/2013-10-13".' in /var/www/happy-moments/data/www/happy-moments.com.ua/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/happy-moments/data/www/happy-moments.com.ua/framework/web/CWebApplication.php(141): CWebApplication->runController('ru/calendar/vie...')
+#1 /var/www/happy-moments/data/www/happy-moments.com.ua/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/happy-moments/data/www/happy-moments.com.ua/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ru/calendar/view/57/2013-10-13
+---
