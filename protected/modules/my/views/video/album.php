@@ -4,7 +4,7 @@
 $this->breadcrumbs=array(
 	'Портфолио'=>array('index'),
     'Альбом'=>array('index'),
-	$model->title=>array('album','id'=>$model->id),
+	$model->title=>array('album','id'=>$user->id),
 );
 ?>
 <?php Yii::app()->clientScript->registerScriptFile(Yii::app()->theme->baseUrl.'/js/min/jquery.fancybox.pack.js'); ?>
@@ -266,18 +266,18 @@ $this->breadcrumbs=array(
         <nav class="cabinet__first-menu">
           <ul>
             <li><?=CHtml::link('Информация','/my/profile/');?></li>
-            <?php if($model->member!=0):?>
-                <?php if($model->occupation->templ=='members'):?>
+            <?php if($user->member!=0):?>
+                <?php if($user->occupation->templ=='members'):?>
                     <li><?=CHtml::link('Портфолио','/my/portfolio/');?></li>
                     <li><?=CHtml::link('Календарь занятости','/my/calendar/');?></li>
-                    <?php if($model->genre_id!=''): ?>
+                    <?php if($user->genre_id!=''): ?>
                     <li><?=CHtml::link('Цены','/my/prices/');?></li>
                     <?php endif; ?>
-                <?php elseif($model->occupation->templ=='avto'):?>
+                <?php elseif($user->occupation->templ=='avto'):?>
                     <li><?=CHtml::link('Авто парк','/my/avto/');?></li>
-                <?php elseif($model->occupation->templ=='flo'):?>
+                <?php elseif($user->occupation->templ=='flo'):?>
                     <li><?=CHtml::link('Продукция','/my/flo/');?></li>
-                <?php elseif($model->occupation->templ=='rent_photo'):?>
+                <?php elseif($user->occupation->templ=='rent_photo'):?>
                     <li><?=CHtml::link('Интерьеры','/my/studio/interior');?></li>
                     <li><?=CHtml::link('Аренда','/my/studio/rent');?></li>
                     <li><?=CHtml::link('Оборудование','/my/studio/equip');?></li>

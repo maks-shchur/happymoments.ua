@@ -92,6 +92,7 @@ class Users extends CActiveRecord
 			'occupation' => array(self::BELONGS_TO, 'Occupation', 'occupation_id'),
 			'city' => array(self::BELONGS_TO, 'City', 'city_id'),
             'balans' => array(self::HAS_ONE, 'Balans', 'uid'),
+            'files' => array(self::HAS_MANY, 'Files', 'uid'),
 		);
 	}
 

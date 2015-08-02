@@ -340,11 +340,35 @@ function addFavorite(arg) {
                         $pic = Yii::app()->db->createCommand()
                                 ->select('file')
                                 ->from('{{files}}')
-                                ->where('portfolio_id=:id and type="photo" and source="portfolio"', array(':id'=>$item->id))
-                                ->order('id desc')
+                                ->where('portfolio_id=:id and type="video" and source="portfolio"', array(':id'=>$item->id))
+                                ->order('rand()')
                                 ->limit(1)
                                 ->queryRow();
-                        if(is_array($pic)) echo '<img src="/users/'.$model->id.'/370_'.$pic['file'].'" />';
+                        
+                        
+                        $str=parse_url($pic['file']);
+                        //print_r($str); 
+                        $path=explode('/',$str['path']);
+                        if($str['host']=='youtu.be' || $str['host']=='www.youtube.com') {
+                            if($str['host']=='youtu.be') {
+                                $code=$path[1];    
+                            }
+                            elseif($str['host']=='www.youtube.com') {
+                                $code=substr($str['query'], 2, 20);    
+                            }
+                        } elseif($str['host']=='vimeo.com') {
+                            if(isset($path[3]))
+                                $code=$path[3];
+                            else        
+                                $code=$path[1];
+                            
+                            /*if ($xml = simplexml_load_file('http://vimeo.com/api/v2/video/'.$code.'.xml')) {
+                        		//$image = $xml->video->thumbnail_large ? (string) $xml->video->thumbnail_large: (string) $xml->video->thumbnail_medium;
+                                $image = $xml->video->thumbnail_medium;
+                        	} */   
+                        }
+                        $pic_rnd = $code.'.jpg';
+                        if($pic_rnd!='') echo '<img src="/users/'.$model->id.'/video_'.$pic_rnd.'" />';
                         else echo '<img src="/img/zaglushka_video.png" />';
                     endif; ?>
                   </a>

@@ -131,6 +131,8 @@ class UserController extends Controller
                     'portfolio'=>$portfolio,
         		));*/
                 $portfolio=Video::model()->findAllByAttributes(array('uid'=>$id));
+                
+                
         		$this->render('view_video',array(
         			'model'=>$this->loadModel($id),
                     'portfolio'=>$portfolio,
