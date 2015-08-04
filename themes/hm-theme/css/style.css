@@ -2042,6 +2042,31 @@ body {
   background: #90b651;
 }
 
+.register_top {
+  display: inline-block;
+  float: right;
+  width: 105px;
+  height: 29px;
+  margin: 5px 0 0 13px;
+  font-size: 1.14286em;
+  line-height: 1.78571em;
+  color: #a4a5a9;
+  text-align: center;
+  background: #fff;
+  border: 1px solid #c6c7cb;
+  border-radius: 2px;
+  -webkit-transition: all ease-out 0.2s;
+  -moz-transition: all ease-out 0.2s;
+  -o-transition: all ease-out 0.2s;
+  -ms-transition: all ease-out 0.2s;
+  transition: all ease-out 0.2s;
+}
+
+.register_top:hover {
+  color: #fff;
+  background: #90b651;
+}
+
 /*  ---  Р В Р’В Р вЂ™Р’В Р В РІР‚в„ўР вЂ™Р’В Р В Р’В Р В Р вЂ№Р В Р вЂ Р В РІР‚С™Р Р†РІР‚С›РЎС›Р В Р’В Р вЂ™Р’В Р В РІР‚в„ўР вЂ™Р’В Р В Р’В Р вЂ™Р’В Р В Р вЂ Р В РІР‚С™Р вЂ™Р’В Р В Р’В Р вЂ™Р’В Р В Р’В Р В РІР‚в„–Р В Р’В Р В РІР‚В Р В Р’В Р Р†Р вЂљРЎв„ўР В Р Р‹Р Р†РІР‚С›РЎС›Р В Р’В Р вЂ™Р’В Р В РІР‚в„ўР вЂ™Р’В Р В Р’В Р В Р вЂ№Р В Р вЂ Р В РІР‚С™Р РЋРЎвЂєР В Р’В Р вЂ™Р’В Р В Р’В Р В РІР‚в„–Р В Р’В Р вЂ™Р’В Р В Р вЂ Р В РІР‚С™Р РЋРІвЂћСћР В Р’В Р вЂ™Р’В Р В РІР‚в„ўР вЂ™Р’В Р В Р’В Р В Р вЂ№Р В Р вЂ Р В РІР‚С™Р вЂ™Р’ВР В Р’В Р вЂ™Р’В Р В РІР‚в„ўР вЂ™Р’В Р В Р’В Р Р†Р вЂљРІвЂћСћР В РІР‚в„ўР вЂ™Р’В·Р В Р’В Р вЂ™Р’В Р В РІР‚в„ўР вЂ™Р’В Р В Р’В Р Р†Р вЂљРІвЂћСћР В РІР‚в„ўР вЂ™Р’В°Р В Р’В Р вЂ™Р’В Р В Р’В Р В РІР‚в„–Р В Р’В Р В РІР‚В Р В Р’В Р Р†Р вЂљРЎв„ўР В РІР‚в„ўР вЂ™Р’В Р В Р’В Р вЂ™Р’В Р В РІР‚в„ўР вЂ™Р’В Р В Р’В Р В Р вЂ№Р В Р вЂ Р В РІР‚С™Р вЂ™Р’ВР В Р’В Р вЂ™Р’В Р В Р’В Р В РІР‚в„–Р В Р’В Р вЂ™Р’В Р В Р’В Р В Р РЏ  ---  */
 .author {
   position: absolute;
@@ -2481,6 +2506,8 @@ body {
 .header-menu-primary__link--service {
   color: #90b651;
   font: 1.28571em PTSansbold, sans-serif;
+  top: 1px;
+  position: relative;
 }
 
 .header-menu-primary__item:hover {
@@ -12876,4 +12903,9 @@ figcaption .qq-upload-button {
 
 .grid-view .button-column {
     background-color: #FFF !important;
+}
+
+.portfolio_link_top {
+   color: #000; 
+   border-bottom: thin dashed #000;
 }

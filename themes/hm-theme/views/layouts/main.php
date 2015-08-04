@@ -173,7 +173,7 @@
           <!--li class="header-menu-additional__item"><a href="<?=$this->createUrl('/page/advertisment')?>" class="header-menu-additional__link <?=(Yii::app()->controller->action->id=='advertisment' && !isset(Yii::app()->controller->module->id))?'header-menu-additional__link--current':'';?>">Реклама на сайте</a></li-->
           <!--li class="header-menu-additional__item"><a href="/vacancies" class="header-menu-additional__link <?=(Yii::app()->controller->action->id=='vacancies' && !isset(Yii::app()->controller->module->id))?'header-menu-additional__link--current':'';?>">Вакансии</a></li-->
           <!--li class="header-menu-additional__item"><a href="<?=$this->createUrl('/page/help_us')?>" class="header-menu-additional__link <?=(Yii::app()->controller->action->id=='help_us' && !isset(Yii::app()->controller->module->id))?'header-menu-additional__link--current':'';?>">Помощь проекту</a></li-->
-          <li class="header-menu-additional__item"><a href="<?=$this->createUrl('/page/news')?>" class="header-menu-additional__link <?=(Yii::app()->controller->action->id=='news' && !isset(Yii::app()->controller->module->id))?'header-menu-additional__link--current':'';?>">Новости</a></li>
+          <!--li class="header-menu-additional__item"><a href="<?=$this->createUrl('/page/news')?>" class="header-menu-additional__link <?=(Yii::app()->controller->action->id=='news' && !isset(Yii::app()->controller->module->id))?'header-menu-additional__link--current':'';?>">Новости</a></li-->
           <!--li class="header-menu-additional__item"><a href="#" class="header-menu-additional__link">Форум</a></li-->
           <li class="header-menu-additional__item"><a href="<?=$this->createUrl('/page/about')?>" class="header-menu-additional__link <?=(Yii::app()->controller->action->id=='about' && !isset(Yii::app()->controller->module->id))?'header-menu-additional__link--current':'';?>">О проекте</a></li>
         </ul>
@@ -186,13 +186,15 @@
       <?php else: ?>
       <button class="sign_logout" onclick="window.location.href='<?=$this->createUrl('/site/logout')?>'">Выход</button>
       <?php endif; ?>
-      <div class="lang">
+      
+      <button class="register_top" onclick="window.location.href='<?=$this->createUrl('register/index')?>'">Регистрация</button>
+      <?php /*<div class="lang">
         <ul class="lang__list">
           <li class="lang__item<?=Yii::app()->language=='ru' ? '' : ' lang__item--hide'?>"><a href="<?=Settings::changeLang('ru')?>" class="lang__link">Ru</a></li>
-          <?php /*li class="lang__item<?=Yii::app()->language=='ru' ? '' : ' lang__item--hide'?>"><a href="#" class="lang__link">En</a></li*/?>
+          li class="lang__item<?=Yii::app()->language=='ru' ? '' : ' lang__item--hide'?>"><a href="#" class="lang__link">En</a></li
           <!--li class="lang__item<?=Yii::app()->language=='uk' ? '' : ' lang__item--hide'?>"><a href="<?=Settings::changeLang('uk')?>" class="lang__link">Uk</a></li-->
         </ul>
-      </div>
+      </div>*/?>
       <div class="header-social-btns">
         <span class="social-top-text">Мы в соц. сетях</span>
         <a href="https://twitter.com/HMUkraine" target="_blank" class="header-social-btns__link header-social-btns__link--tw"></a>
@@ -255,7 +257,7 @@
           if(Yii::app()->getRequest()->getPost('city')) {
                 $cookie = new CHttpCookie('city', $_POST['city']);
                 Yii::app()->request->cookies['city']=$cookie; 
-                $cookie->expire = time() + 3600;
+                $cookie->expire = time() + 2629743;
                 $c=City::model()->findByPk($_POST['city'])->name;
                 echo '<button class="show-cities" id="cur_city">'.$c.'</button>';
           }
@@ -548,7 +550,7 @@
           <a class="social-link fb" target="_blank" href="https://www.facebook.com/pages/Happy-Moments/347923621985767"></a>
          </div>
          <div class="copy">
-           ©   2008—2014<br>
+           ©   2012—<?=date('Y')?><br>
            Все работы выложенные на сайте являються  собственностью их авторов. По вопросам использования работ связывайтесь с авторами.
          </div>
        </div>
@@ -556,8 +558,8 @@
        <div class="footer-info">
          <div class="footer-header">Информация</div>
          <a class="footer-link footer-info-link" href="<?=$this->createUrl('page/about')?>">О проекте</a>
-         <a class="footer-link footer-info-link" href="<?=$this->createUrl('page/news')?>">Новости</a>
-         <a class="footer-link footer-info-link" href="#">Помощь в разработке</a>
+         <!--a class="footer-link footer-info-link" href="<?=$this->createUrl('page/news')?>">Новости</a-->
+         <!--a class="footer-link footer-info-link" href="#">Помощь в разработке</a-->
        </div>
        <!-- end footer-info -->
        <div class="footer-info">

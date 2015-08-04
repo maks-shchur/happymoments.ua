@@ -1,14 +1,15 @@
 <?php
+$usr_link = '<a href="/id'.$user->id.'">"'.$user->name.'</a>';
 $this->breadcrumbs=array(
 	'Пользователи',
-	$user->name,
+	$usr_link,
 );
 ?>
 <?php Yii::app()->clientScript->registerScriptFile(Yii::app()->theme->baseUrl.'/js/min/jquery.fancybox.pack.js'); ?>
 <?php Yii::app()->clientScript->registerScriptFile(Yii::app()->theme->baseUrl.'/js/fancy.js'); ?>
 <div class="wrapper accaunt-main__gallery">
 <div class="container">
-    <h2>Портфолио</h2>
+    <h2><a href="/id<?=$user->id?>" class="portfolio_link_top"><?=$user->name?></a> - Портфолио</h2>
     <div id="listView">
     <?php
     (3-$dataProvider->ItemCount%3)==1 ? $s=' style="margin-right:0;"' : $s='';

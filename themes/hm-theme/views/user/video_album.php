@@ -7,7 +7,7 @@ $this->breadcrumbs=array(
 <?php Yii::app()->clientScript->registerScriptFile(Yii::app()->theme->baseUrl.'/js/min/jquery.fancybox.pack.js'); ?>
 <div class="wrapper accaunt-main__gallery">
 <div class="container">
-    <h2>Портфолио</h2>
+    <h2><a href="/id<?=$user->id?>" class="portfolio_link_top"><?=$user->name?></a> - Портфолио</h2>
     <div id="listView">
     <?php     //echo $dataProvider->ItemCount%3; ?>
     <?php $this->widget('zii.widgets.CListView', array(

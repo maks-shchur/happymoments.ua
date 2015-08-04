@@ -12,6 +12,35 @@ $this->breadcrumbs=array(
     </div>
   </div>
   
+  <div class="container register_2_dop">
+        <h2>Если вашей предоставляемой услуги нет в списке, выберите подходящую категорию и укажите название услуги</h2>
+                <?php 
+                //$model = new Occupation;
+                $form=$this->beginWidget('CActiveForm', array(
+                	'id'=>'occ-form',
+                    'action'=>$this->createUrl('/register/create_occ'),
+                	'enableClientValidation'=>true,
+                	'clientOptions'=>array(
+                		'validateOnSubmit'=>true,
+                	),
+                )); ?>
+                <div class="col-12 add-action__form-container">
+                    <?php echo $form->dropDownList($model,'cat_id',CHtml::listData(Category::model()->findAll(),'id','name'),array('class'=>'default__input','style'=>'width: 547px; margin: 0 auto;'));?>
+                    <?php echo $form->error($model,'cat_id'); ?>
+                </div>
+                <div class="col-12 add-action__form-container">
+                    <?php //echo $form->labelEx($model,'email'); ?>
+            		<?php echo $form->textField($model,'name', array('class'=>'default__input', 'placeholder'=>'Мим','style'=>'width: 547px; margin: 0 auto;')); ?>
+            		<?php echo $form->error($model,'name'); ?>
+                    <?php echo CHtml::hiddenField('uid',Yii::app()->getRequest()->getParam('uid')); ?>
+                    <?php echo CHtml::submitButton('', array('class'=>'registe_2_submit')); ?>
+                </div>
+                
+                <?php $this->endWidget(); ?>
+      </div>
+    <div class="clfx"></div>    
+  
+  
   <form action="<?=$this->createUrl('/register/step2');?>" method="post">
   <!--div class="container register_2-container clfx">
       <div class="big_radio-container">
@@ -78,33 +107,6 @@ $this->breadcrumbs=array(
     });
   </script>
   </form>   
-      <div class="clfx"></div>
-      <div class="container register_2_dop">
-        <h2>Если вашей предоставляемой услуги нет в списке, выберите подходящую категорию и укажите название услуги</h2>
-                <?php 
-                //$model = new Occupation;
-                $form=$this->beginWidget('CActiveForm', array(
-                	'id'=>'occ-form',
-                    'action'=>$this->createUrl('/register/create_occ'),
-                	'enableClientValidation'=>true,
-                	'clientOptions'=>array(
-                		'validateOnSubmit'=>true,
-                	),
-                )); ?>
-                <div class="col-12 add-action__form-container">
-                    <?php echo $form->dropDownList($model,'cat_id',CHtml::listData(Category::model()->findAll(),'id','name'),array('class'=>'default__input','style'=>'width: 547px; margin: 0 auto;'));?>
-                    <?php echo $form->error($model,'cat_id'); ?>
-                </div>
-                <div class="col-12 add-action__form-container">
-                    <?php //echo $form->labelEx($model,'email'); ?>
-            		<?php echo $form->textField($model,'name', array('class'=>'default__input', 'placeholder'=>'Мим','style'=>'width: 547px; margin: 0 auto;')); ?>
-            		<?php echo $form->error($model,'name'); ?>
-                    <?php echo CHtml::hiddenField('uid',Yii::app()->getRequest()->getParam('uid')); ?>
-                    <?php echo CHtml::submitButton('', array('class'=>'registe_2_submit')); ?>
-                </div>
-                
-                <?php $this->endWidget(); ?>
-      </div>
 
         <!--div class="col-12 text_center">
             <div class="btn__group clfx">

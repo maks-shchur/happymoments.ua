@@ -10,7 +10,7 @@ $this->breadcrumbs=array(
 
 <div class="wrapper accaunt-main__gallery">
 <div class="container">
-    <h2>Портфолио</h2>
+    <h2><a href="/id<?=$user->id?>" class="portfolio_link_top"><?=$user->name?></a> - Портфолио</h2>
     
     <div class="connected-carousels">
       <div class="navigation">
