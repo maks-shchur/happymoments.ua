@@ -12909,3 +12909,23 @@ figcaption .qq-upload-button {
    color: #000; 
    border-bottom: thin dashed #000;
 }
+
+
+.error {
+    display: block;
+    font-size: 18px;
+    margin:  20px;
+    color: #fff;
+    padding: 15px;
+    background: #fb5353;
+    text-align: center;
+}
+.success {
+    display: block;
+    font-size: 18px;
+    margin:  20px;
+    color: #fff;
+    padding: 15px;
+    background: #8ab04b;
+    text-align: center;
+}

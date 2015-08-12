@@ -606,65 +606,35 @@
   if(Yii::app()->user->hasFlash('success_save') || Yii::app()->user->hasFlash('pass_save')) {
   ?>
     <div class="apply"><?=Yii::t('main','Your data save');?></div>
-    <script>
-    $(document).ready(function(){
-        $('.apply').css('display','block');
-        $('.apply').delay(2000).fadeOut();
-    });    
-    </script>
   <?php
   } elseif(Yii::app()->user->hasFlash('add_occ')) {
   ?>
   <div class="apply"><?=Yii::t('main','Category already added');?></div>
-    <script>
-    $(document).ready(function(){
-        $('.apply').css('display','block');
-        $('.apply').delay(3500).fadeOut();
-    });    
-    </script>
   <?php  
   } elseif(Yii::app()->user->hasFlash('create_occ')) {
   ?>
   <div class="apply"><?=Yii::t('main','Category added');?></div>
-    <script>
-    $(document).ready(function(){
-        $('.apply').css('display','block');
-        $('.apply').delay(3000).fadeOut();
-    });    
-    </script>
   <?php  
   } elseif(Yii::app()->user->hasFlash('add_favorite')) {
   ?>
   <div class="apply"><?=Yii::app()->user->getFlash('add_favorite');?></div>
-    <script>
-    $(document).ready(function(){
-        $('.apply').css('display','block');
-        $('.apply').delay(3000).fadeOut();
-    });    
-    </script>
   <?php  
   } elseif(Yii::app()->user->hasFlash('balans_add')) {
   ?>
   <div class="apply"><?=Yii::app()->user->getFlash('balans_add');?></div>
-    <script>
-    $(document).ready(function(){
-        $('.apply').css('display','block');
-        $('.apply').delay(3000).fadeOut();
-    });    
-    </script>
   <?php  
   } elseif(Yii::app()->user->hasFlash('account_activated')) {
   ?>
-  <div class="apply"><?=Yii::t('register','Account activated');?></div>
+  <div class="apply"><?=Yii::t('register','Account activated');?></div>  
+  <?php  
+  } 
+  ?>
     <script>
     $(document).ready(function(){
         $('.apply').css('display','block');
-        $('.apply').delay(3000).fadeOut();
+        $('.apply').delay(4000).fadeOut();
     });    
     </script>
-  <?php  
-  }
-  ?>
 </div>
 </body>
 </html>
