@@ -15,7 +15,7 @@ $this->breadcrumbs=array(
   <div class="container register_2_dop">
         <h2>Если вашей предоставляемой услуги нет в списке, выберите подходящую категорию и укажите название услуги</h2>
                 <?php 
-                //$model = new Occupation;
+                $model = new Occupation;
                 $form=$this->beginWidget('CActiveForm', array(
                 	'id'=>'occ-form',
                     'action'=>$this->createUrl('/register/create_occ'),
@@ -68,7 +68,7 @@ $this->breadcrumbs=array(
             //            <ul class="dropdownmenu__item__list">';    
             //}  
             echo '<li class="dropdownmenu__item__list__item"><h3 class="dropdownmenu__item__list__item__title">'.$v->name.'</h3></li>';
-            $model = new Occupation;
+            //$model = new Occupation;
             $list1=$model->findAll('cat_id=:cid',array(':cid'=>$v->id));
             $i=1;
             foreach($list1 as $k1=>$v1) {

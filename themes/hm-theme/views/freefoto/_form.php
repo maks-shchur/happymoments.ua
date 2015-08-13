@@ -33,10 +33,10 @@
         <label for="datepicker" class="search__hidden__input-label">Когда Вас сфотографировали</label>
         <input type="text" id="date_freefoto" value="<?=isset($_POST['date'])?$_POST['date']:''?>" name="date" placeholder="Выберите дату" class="search__hidden__input freefoto__hidden__input--datepicker" />
     </div>
-    <div class="search__hidden__float-container search__hidden__float-container--w269">
+    <?/*div class="search__hidden__float-container search__hidden__float-container--w269">
         <label for="name" class="search__hidden__input-label">Кто Вас сфотографировал</label>
         <input type="text" name="name" value="<?=isset($_POST['name'])?$_POST['name']:''?>" class="search__hidden__input" placeholder="необязательое поле" id="free3" />
-    </div>
+    </div*/?>
     <div class="search__hidden__float-container search__hidden__float-container--w269" style="padding-top:26px;">
         <?=CHtml::submitButton('ИСКАТЬ',array('class'=>'green-btn', 'style'=>'height:46px;'));?>
     </div>
